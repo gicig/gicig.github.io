@@ -1,0 +1,22 @@
+body {
+    font-family: monospace;
+    font-size: 18px;
+}
+
+header {
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    justify-content: center;
+}
+
+header nav {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-evenly;
+    width: 600px;
+}
+
+.navigation-side {
+    width: 50px;
+}
