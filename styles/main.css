@@ -17,6 +17,9 @@
         width: 1000px;
     }
 
+    /*
+        Make all items (navigation and side pads) in the header centered vertically
+    */
     header {
         display: flex;
         align-items: center;
@@ -39,11 +42,69 @@
         width: 50px;
     }
 
+    /*
+        Make a small space between hero image and header
+    */
     .hero-image {
         margin-top: 1em;
     }
 
+    /*
+        Center article headlines
+    */
     article h1 {
         text-align: center;
+    }
+
+    /*
+        Make a small space between footer and the rest of the page
+    */
+    footer {
+        margin-top: 3em;
+    }
+
+    /*
+        Order footer items one below each other
+    */
+    footer ul {
+        display: flex;
+        justify-content: space-evenly;
+        padding: 0em;
+    }
+
+    /*
+        Remove the ootb stylings of footer items
+    */
+    footer ul li {
+        list-style: none;
+    }
+
+    /*
+        Make some space between footer items
+    */
+    .footer-item {
+        padding: 0 10px;
+        border-left: 1px solid gray;
+    }
+
+    /*
+        First footer item doesn't need border
+    */
+    .footer-item.footer-item__first {
+        border: 0px;
+    }
+
+    /*
+        Last footer item doesn't need right padding
+    */
+    .footer-item.footer-item__last {
+        padding-right: 0px;
+    }
+
+    /*
+        Copyright takes the remaining space in footer
+    */
+    #copyright {
+        flex-grow: 1;
     }
 }
