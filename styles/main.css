@@ -1,25 +1,49 @@
 /* Desktop screens */
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 1024px) {
+    /* 
+        Flex with flow column and central alignment of items centers content horizontally on the page
+    */
     body {
         font-family: monospace;
-        font-size: 18px;
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+    }
+
+    /*
+        Content width is set on one place, so header, main and footer can fill the whole width and be aligned
+    */
+    #content {
+        width: 1000px;
     }
 
     header {
         display: flex;
-        flex-flow: row;
         align-items: center;
-        justify-content: center;
     }
 
+    /*
+        flex-grow: 1; makes navigation occupy remaining space left from items around it that have fixed width
+        justify-content: space-evenly; makes navigation items distribute evenly on x-axis
+    */
     header nav {
         display: flex;
-        flex-flow: row;
+        flex-grow: 1;
         justify-content: space-evenly;
-        width: 900px;
     }
 
+    /*
+        Make 2 elements that surround navigation have same size so that navigation is centered
+    */
     .navigation-side {
         width: 50px;
+    }
+
+    .hero-image {
+        margin-top: 1em;
+    }
+
+    article h1 {
+        text-align: center;
     }
 }
