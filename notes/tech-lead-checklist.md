@@ -1,4 +1,4 @@
-# What do document
+# What to document
 - Ticket types
 - Ticket workflow (e.g, Open, In progress, Closed)
 - Branch name format
