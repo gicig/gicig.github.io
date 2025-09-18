@@ -1,0 +1,13 @@
+# What do document
+- Ticket types
+- Ticket workflow (e.g, Open, In progress, Closed)
+- Branch name format
+- Commit message format
+- Branching strategy
+- Source code triggers (PR open, commit in develop/main)
+- Non-prod environments
+- What branch is deployed to what environment and how (manually, on commit, on PR opened, etc.)
+- Local development setup dependencies (Java version, Maven version, OS version, NPM version, Rancher Desktop, 1password, etc.)
+- Local development commands (start, stop, deploy, watch files, IDE plugins, etc.)
+- Repositories needed (Project, Server, Content, etc.)
+- External tools access (Jira, Confluence, Azure, Adobe Cloud, Nexus as package manager, ...)
